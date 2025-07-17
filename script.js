@@ -2,6 +2,7 @@ function stringChop(str, size) {
 	let res = [];
 	let curr = 0;
 	let temp = "";
+	if(str.length === null) return [];
 	for(let i=0;i<str.length;i++){
 		if(curr === size){
 			res.push(temp);
